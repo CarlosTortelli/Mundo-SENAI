@@ -1,6 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 
+/*
 const nameController = require('./controllers/nameController'); 
 const emailController = require('./controllers/emailController');
 const ageController = require('./controllers/ageController');
@@ -37,5 +38,6 @@ routes.delete('/email_visitante', emailController.delete);
 routes.delete('/telefone_visitante', numberController.delete);
 
 routes.delete('/idade_visitante', ageController.delete);
+*/
 
 module.exports = routes;

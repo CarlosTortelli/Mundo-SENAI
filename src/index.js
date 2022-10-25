@@ -1,5 +1,6 @@
 const express= require('express')
 const cors = require('cors');
+const database = require('./database/database.js')
 const routes = require('./routes.js');
 const app= express()
 const PORT= 3000
@@ -14,5 +15,5 @@ app.get('/', function(req, res){
 })
 
 app.listen(PORT, function(){
-    console.log(`App aberto na porta ${PORT}`)
+    console.log(`oia o banco: ${database}`)
 })
