@@ -12,12 +12,11 @@ const ObterVisitantes = async () => {
       })
 
     await client.connect()
-    const res = await client.query('select * from "NorthWind".visitante')
-    const result = res.rows[0].message
+    const res = await client.query('Select * from "NorthWind".visitante')
+    console.table(res.rows)
     await client.end()
-    return result;
 }
 
-ObterVisitantes().then((result) => {
-    console.log(result)
+ObterVisitantes().then((res) => {
+    console.log("BANCO FUNUNCIA")
 });
