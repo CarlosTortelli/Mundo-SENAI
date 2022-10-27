@@ -17,3 +17,7 @@ app.get('/', function(req, res){
 app.listen(PORT, function(){
     console.log(`oia o banco: ${database}`)
 })
+
+app.post("/rota", function(req, res){
+    res.send('Formulario recebido')
+})
