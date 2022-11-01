@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://fontawesome.com/v5.15/icons/twitter?style=brands"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="form-script.js"></script>
+    <script src="https://kit.fontawesome.com/15c9072458.js" crossorigin="anonymous"></script>
+    <title>Form Test</title>
+</head>
+<body>
+
+    <header class="corinthians">
+       <div>
+           <img src="img/Meu projeto.png" alt="Foto" height="80px">    
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>CADASTRO</h2>
+        <form action="/rota" method="post">
+            <div class='input-field'>
+                <input type="text" name="Username" id="username" placeholder="Insira o nome*" required>
+                <div class="underline"></div>
+            </div>
+                
+            <div class='input-field'>
+                <input type="tel" maxlength="14" name="Number" id="Number" data-js="phone" placeholder="(xx) xxxxx-xxxx">
+                <div class="underline"></div>
+            </div>
+
+            <div class='input-field'>
+                <input type="email" name="Email" id="Email" placeholder="Insira o E-Mail">
+                <div class="underline"></div>
+            </div>
+
+            <div class='input-field'>
+                <input type="number" name="Age" id="Age" placeholder="Insira a Idade*" required>
+                <div class="underline"></div>
+            </div>
+                
+                    <input type="submit" value="Cadastrar" onclick="clicou()" class="botao">
+
+                    <a href="lista.html" class="botao">Lista de Cadastros</a>
+
+        </form>
+    </main>
+
+    <script src="phone.js"></script>
+</body>
+</html>

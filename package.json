@@ -9,10 +9,9 @@
   "scripts": {
     "dev": "node src/index.js"
   },
-  "name": "mundo-senai",
+  "name": "s",
   "description": "Feito para o trabalho do mundo SENAI",
   "version": "1.0.0",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CarlosTortelli/Mundo-SENAI.git"
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/CarlosTortelli/Mundo-SENAI/issues"
   },
-  "homepage": "https://github.com/CarlosTortelli/Mundo-SENAI#readme"
+  "homepage": "https://github.com/CarlosTortelli/Mundo-SENAI#readme",
+  "devDependencies": {}
 }

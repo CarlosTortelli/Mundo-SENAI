@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, #0051ff, #570b75);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+main.container{
+    background-color: white;
+    min-width: 450px;
+    max-width: 550px;
+    min-height: 40vh;
+    padding: 2rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+main h2::before{
+    content: ' ';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    border-radius: 10px;
+    left: 0;
+    bottom: 3px;
+    background: linear-gradient(45deg, #4800EB, #9B0BD4);
+}
+
+.corinthians {
+    width:100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: red; */
+    color: pink;
+
+    position: absolute;
+    top: 0%;
+}
+.corinthians > div{
+    margin: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+form .input-field input{
+    width: 100%;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #4800EB, #9B0BD4);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.493);
+}
+ .botao{
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #4488ff, #8112ff);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all 1.5s ease;
+    text-align: center;
+}
+.botao:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #4488ff, #8112ff);
+}
+/* form input[type="submit"] */
